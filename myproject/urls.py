@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,3 +29,5 @@ urlpatterns = [
     path('api/', include('addrestaurant.urls')),  # Include your app's URLs
     path('api/', include('contact.urls')),  # Include your app's URLs
 ]
+urlpatterns += staticfiles_urlpatterns()
+
