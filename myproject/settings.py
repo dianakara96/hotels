@@ -30,9 +30,8 @@ SECRET_KEY = 'django-insecure-)la2jm6@9%7=9k)i+7l&k%gh@m3jj-lj**l2_ut+k-0=(n=_g=
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    # 'localhost',
-    # '127.0.0.1',
-    'hotels-4-hgrb.onrender.com',
+    '*'
+    # 'hotels-4-hgrb.onrender.com',
 ]
 
 
