@@ -36,7 +36,7 @@ class AddHotelListCreateView(generics.ListCreateAPIView):
 class AddHotelDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = addhotel.objects.all()
     serializer_class = AddHotelSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
 class RoomListCreateView(generics.ListCreateAPIView):
     queryset = Room.objects.all()
